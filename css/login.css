@@ -1,0 +1,49 @@
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background: var(--white);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: var(--gray-700);
+    margin-bottom: var(--spacing-xl);
+    font-size: 24px;
+}
+
+.login-container .logo {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    font-size: 60px;
+}
+
+.login-tabs {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xl);
+}
+
+.login-tabs button {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid var(--gray-200);
+    background: var(--white);
+    cursor: pointer;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: all var(--transition-normal);
+}
+
+.login-tabs button.active {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.login-tabs button:hover:not(.active) {
+    background: var(--gray-50);
+}

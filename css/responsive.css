@@ -1,0 +1,86 @@
+/* ========================================
+   RESPONSIVE DESIGN
+   Mobile & Tablet Styles
+   ======================================== */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    body {
+        padding: var(--spacing-sm);
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    table th,
+    table td {
+        padding: var(--spacing-sm);
+    }
+    
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .navbar a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .content {
+        padding: var(--spacing-lg);
+    }
+    
+    .login-container {
+        margin: 50px auto;
+        padding: var(--spacing-lg);
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 20px;
+    }
+    
+    .header p {
+        font-size: 12px;
+    }
+    
+    .stat-card h3 {
+        font-size: 28px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: var(--white);
+        padding: 0;
+    }
+    
+    .navbar,
+    .btn,
+    .action-buttons {
+        display: none;
+    }
+    
+    .container {
+        box-shadow: none;
+    }
+}
